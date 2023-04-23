@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../pictures/heart-g1ae8c1a5a_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center 1%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #F6F6F6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.transparent-container {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-image: linear-gradient(90deg, #E5C686, #1E1D1B);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #bdc3c7;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding-left: 5px;
+}
+
+.navbar .navbar-brand:hover {
+    color: #bdc3c7;
+}
+
+.navbar-image {
+    position: absolute;
+    right: 15px; /* Adjust the distance from the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px; /* Adjust the image height */
+    width: auto;
+}
+
+
+/* Buttons */
+.btn-primary {
+    background-color: #E5C686;
+    border-color: #E5C686;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #D5B676;
+    border-color: #D5B676;
+}
+
+.btn-secondary {
+    background-color: #1E1D1B;
+    border-color: #1E1D1B;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #0E0D0B;
+    border-color: #0E0D0B;
+}
+
+/* Accordion */
+
+
+.accordion-header {
+    font-weight: 600;
+}
+
+.accordion-button {
+    background-color: #E5C686;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border: none;
+}
+
+.accordion-button:hover {
+    background-color: #D5B676;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #D5B676;
+    color: white;
+}
+
+.accordion-body {
+    background-color: transparent;
+    color: #2c3e50;
+    padding: 1.25rem;
+    border-top: 1px solid #eaeaea;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1E1D1B;
+  color: white;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+.footer .container {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.footer a:hover {
+    color: #bdc3c7;
+}
+  
+.footer ul {
+    padding: 0;
+}
+  
+.footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+  
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer p,
+.footer ul,
+.footer li {
+  margin-bottom: 0;
+  padding: 0;
+}
