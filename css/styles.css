@@ -3,8 +3,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url(../pictures/heart-g1ae8c1a5a_1920.jpg);
     background-repeat: no-repeat;
-    background-position: center 1%;
-    background-size: 50%;
+    background-position: calc(100% - 5px) center; 
+    background-size: 25%;
     background-color: #1E1D1B;
     display: flex;
     flex-direction: column;
@@ -23,13 +23,17 @@ html, body {
     border-radius: 5px;
     padding: 20px;
     flex-grow: 1;
+
 }
 
 .transparent-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
     background-color: transparent;
     box-shadow: none;
-    padding: 0;
     flex-grow: 1;
+    color: #D5B676;
 }
 
 /* Header */
@@ -53,8 +57,9 @@ html, body {
 }
 
 .navbar .nav-link {
-    color: white;
+    color: #D5B676;
     font-weight: 600;
+    font-size: large;
     transition: color 0.3s;
     
 }
@@ -120,7 +125,7 @@ html, body {
 
 .accordion-button {
     background-color: #E5C686;
-    color: white;
+    color: #0E0D0B;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     border: none;
@@ -132,24 +137,44 @@ html, body {
 
 .accordion-button:not(.collapsed) {
     background-color: #D5B676;
-    color: white;
+    color: #1E1D1B;
 }
 
 .accordion-body {
-    background-color: transparent;
-    color: #2c3e50;
+    background-color: #1E1D1B;
+    color: #D5B676;
     padding: 1.25rem;
     border-top: 1px solid #eaeaea;
 }
 
+/* text part*/
+
+.text-white {
+    background-color: #1E1D1B;
+    border-radius: 5px;
+    box-shadow: 0 4px 8p #D5B676;
+    padding: 20px;
+  }
+.text-white h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #D5B676;
+}
+
+.text-white p {
+    margin-bottom: 20px;
+    
+}
 
 /* Footer */
 .footer {
-    background-color: #1E1D1B;
-  color: white;
-  padding: 20px 0;
-  margin-top: auto;
-}
+    background-color: #D5B676;
+    color: #1E1D1B;
+    padding: 5px 0;
+    margin-top: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    }
 
 .footer .container {
     background-color: transparent;
@@ -188,6 +213,22 @@ html, body {
 .footer p,
 .footer ul,
 .footer li {
-  margin-bottom: 0;
-  padding: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Feedback Form Styles */
+.feedback-form-container {
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    color: #D5B676;
+}
+
+.feedback-form {
+    background-color: transparent;
+    border: 1px solid #D5B676;
+    border-radius: 5px;
+    padding: 20px;
 }
