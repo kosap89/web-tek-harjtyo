@@ -39,7 +39,7 @@ html, body {
 /* Header */
 .custom-header {
     background-color: #1E1D1B;
-    color: #E5C686;
+    color: #D5B676;
     padding: 20px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -81,13 +81,41 @@ html, body {
 
 .navbar-image {
     position: absolute;
-    right: 15px; /* Adjust the distance from the right edge */
+    right: 15px; 
     top: 50%;
     transform: translateY(-50%);
-    height: 50px; /* Adjust the image height */
+    height: 50px; 
     width: auto;
 }
 
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      border-color: transparent;
+      margin-left: 0;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #D5B676;
+      border-radius: 0;
+    }
+
+    .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+      background-color: #D5B676;
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+}
 
 /* Buttons */
 .btn-primary {
@@ -185,17 +213,7 @@ html, body {
     font-weight: bold;
     margin-bottom: 10px;
 }
-  
-.footer a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-  
-.footer a:hover {
-    color: #bdc3c7;
-}
-  
+
 .footer ul {
     padding: 0;
 }
